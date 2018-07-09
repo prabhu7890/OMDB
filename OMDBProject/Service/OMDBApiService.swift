@@ -17,11 +17,18 @@ class OMDBApiService {
         self.apiRequestor = apiRequestor
     }
     
-    func getMovieList(completionHandler: (OMDBMovieList, Error) -> Void) {
-        
-        self.apiRequestor.loadRequest(request: RequestRouter.getMovieList()) { (response, error) -> Void in
-            //TODO: get response data and create a OMDBMovieList and pass on the error
-            
+    func getMovieList(page: Int, completionHandler: @escaping (OMDBMovieList?, Error?) -> Void) {        
+        self.apiRequestor.loadRequest(urlRequest: RequestRouter.getMovieList(page)) { (responseDict, error) -> Void in
+            if error == nil {
+                if let dict = responseDict as? Dictionary<String, AnyObject> {
+                    let movieList = OMDBMovieList.mapFromDictionary(dictionary: dict)
+                    completionHandler(movieList, error)
+                }
+            }
+            else {
+                completionHandler(nil, error)
+                print(error?.localizedDescription)
+            }
         }
     }
         

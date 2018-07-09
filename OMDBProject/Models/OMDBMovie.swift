@@ -10,4 +10,13 @@ import Foundation
 
 struct OMDBMovie {
     var name:String?
+    
+    init(name:String) {
+        self.name = name
+    }
+    
+    static func mapFromDictionary(dictionary:Dictionary<String, AnyObject>) -> OMDBMovie {
+        let omdbMovie = OMDBMovie(name: dictionary["original_title"]! as! String)
+        return omdbMovie
+    }
 }

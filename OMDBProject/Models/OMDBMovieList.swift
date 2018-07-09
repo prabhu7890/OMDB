@@ -10,4 +10,17 @@ import Foundation
 
 struct OMDBMovieList {
     var movies:[OMDBMovie]?
+    
+    init(movies:[OMDBMovie]) {
+        self.movies = movies
+    }
+    
+    static func mapFromDictionary(dictionary:Dictionary<String, AnyObject>) -> OMDBMovieList? {
+        let movieDictList = dictionary["results"] as! [Dictionary<String, AnyObject>]
+        var movieList:[OMDBMovie] = []
+        for movieDict in movieDictList {
+            movieList.append(OMDBMovie.mapFromDictionary(dictionary: movieDict))
+        }
+        return OMDBMovieList(movies: movieList)
+    }
 }

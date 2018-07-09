@@ -11,5 +11,5 @@ import Alamofire
 
 //DI, an implementation of ApiRequestor will be passed as an instance to init method of OMDBApiService, this approach could be used for creating stub for unit testing
 protocol ApiRequestor {
-    func loadRequest(request:URLRequestConvertible, _ completionHandler:  (AnyObject, Error) -> Void)
+    func loadRequest(urlRequest:URLRequestConvertible, _ completionHandler: @escaping (AnyObject?, Error?) -> Void)
 }
