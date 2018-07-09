@@ -12,7 +12,7 @@
 		96D4EAD320F2BBC50056A40C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D4EAD120F2BBC50056A40C /* Main.storyboard */; };
 		96D4EAD520F2BBC60056A40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D4EAD420F2BBC60056A40C /* Assets.xcassets */; };
 		96D4EAD820F2BBC60056A40C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D4EAD620F2BBC60056A40C /* LaunchScreen.storyboard */; };
-		96D4EAE320F2BBC70056A40C /* OMDBProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EAE220F2BBC70056A40C /* OMDBProjectTests.swift */; };
+		96D4EAE320F2BBC70056A40C /* OMDBMovieListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EAE220F2BBC70056A40C /* OMDBMovieListTests.swift */; };
 		96D4EAEE20F2BF210056A40C /* OMDBMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EAED20F2BF210056A40C /* OMDBMovieListViewController.swift */; };
 		96D4EAF220F2BFC10056A40C /* OMDBMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EAF120F2BFC10056A40C /* OMDBMovieList.swift */; };
 		96D4EAF420F2C04B0056A40C /* OMDBMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EAF320F2C04B0056A40C /* OMDBMovie.swift */; };
@@ -52,7 +52,7 @@
 		96D4EAD720F2BBC60056A40C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96D4EAD920F2BBC60056A40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D4EADE20F2BBC70056A40C /* OMDBProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMDBProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96D4EAE220F2BBC70056A40C /* OMDBProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBProjectTests.swift; sourceTree = "<group>"; };
+		96D4EAE220F2BBC70056A40C /* OMDBMovieListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieListTests.swift; sourceTree = "<group>"; };
 		96D4EAE420F2BBC70056A40C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D4EAED20F2BF210056A40C /* OMDBMovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieListViewController.swift; sourceTree = "<group>"; };
 		96D4EAF120F2BFC10056A40C /* OMDBMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieList.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		96D4EAE120F2BBC70056A40C /* OMDBProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				96D4EAE220F2BBC70056A40C /* OMDBProjectTests.swift */,
+				96D4EAE220F2BBC70056A40C /* OMDBMovieListTests.swift */,
 				96D4EAE420F2BBC70056A40C /* Info.plist */,
 				96D4EB1020F391630056A40C /* ApiServiceTests.swift */,
 			);
@@ -410,7 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D4EB1120F391630056A40C /* ApiServiceTests.swift in Sources */,
-				96D4EAE320F2BBC70056A40C /* OMDBProjectTests.swift in Sources */,
+				96D4EAE320F2BBC70056A40C /* OMDBMovieListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
