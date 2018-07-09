@@ -10,10 +10,22 @@ import UIKit
 
 class OMDBMovieListViewController: UIViewController {
 
+    var viewModel:OMDBMovieListViewModel!
+    
+    @IBOutlet weak var movieCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.viewModel = OMDBMovieListViewModel()
+        
+        self.viewModel.movieList.bind { movieList in
+            print("loaded \(movieList)")
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.viewModel.loadData(page: 1)
     }
 
     override func didReceiveMemoryWarning() {

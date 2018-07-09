@@ -64,6 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="cgu-Wg-uet"/>
+                    <connections>
+                        <outlet property="movieCollectionView" destination="DzX-Hj-ZwO" id="5eu-wJ-Sdu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

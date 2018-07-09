@@ -9,10 +9,15 @@
 import Foundation
 
 struct OMDBMovieList {
+    
     var movies:[OMDBMovie]?
     
     init(movies:[OMDBMovie]) {
         self.movies = movies
+    }
+    
+    static func emptyList() -> OMDBMovieList {
+        return OMDBMovieList(movies: [])
     }
     
     static func mapFromDictionary(dictionary:Dictionary<String, AnyObject>) -> OMDBMovieList? {
