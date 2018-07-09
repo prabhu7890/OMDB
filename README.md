@@ -29,5 +29,5 @@ I have used the master branch to push my changes, ideally in real world you will
 
 ### Implemented feature
  - Fetched the list of movies and displayed in a grid
- - On tapping the movie the user is taken into a detail page where the title of the movie is displayed, I haven't fetched the /movie/{movie_id}. Ideally the steps would be very similar to what is done for the list with its own view model and the corresponding bindings to the other fields.
+ - On tapping the movie the user is taken into a detail page where the title of the movie is displayed by passing the same model onto next page (I haven't used the other api endpoint /movie/{movie_id} to fetch it). Ideally the steps would be very similar to what is done for the list with its own view model and the corresponding bindings to all the fields for the movie detail.
  - Unit test for APIService and List View model with mock api service
