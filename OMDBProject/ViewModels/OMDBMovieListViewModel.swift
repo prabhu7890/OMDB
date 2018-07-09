@@ -12,6 +12,12 @@ class OMDBMovieListViewModel {
     
     var movieList:Observable<OMDBMovieList> = Observable<OMDBMovieList>(OMDBMovieList.emptyList())
     var selectedItem:Observable<OMDBMovie> = Observable<OMDBMovie>(OMDBMovie.empty())
+    var selectedMovie:OMDBMovie {
+        get {
+            return selectedItem.value
+        }
+    }
+    
     var error:Observable<Error>?
     let apiService:OMDBApiService
     

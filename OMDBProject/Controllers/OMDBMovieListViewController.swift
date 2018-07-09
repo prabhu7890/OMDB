@@ -12,6 +12,7 @@ class OMDBMovieListViewController: UIViewController {
 
     var viewModel:OMDBMovieListViewModel!
     let kOMDBMovieListCollectionViewCell:String = "OMDBMovieListCollectionViewCell"
+    let kMovieDetailSegue = "showMovieDetail"
     
     @IBOutlet weak var movieCollectionView: UICollectionView!
     
@@ -29,9 +30,12 @@ class OMDBMovieListViewController: UIViewController {
         }
         
         self.viewModel.selectedItem.bind { [unowned self] movie in
-            print("Selected movie:\(movie.name)")
+            print("Selected movie:\(String(describing: movie.name))")
             if(!movie.isEmpty) {
                 print("Open it up")
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: self.kMovieDetailSegue, sender: nil)
+                }
             }
         }
     }
@@ -47,15 +51,17 @@ class OMDBMovieListViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? OMDBMovieDetailViewController {
+            let movie = self.viewModel.selectedMovie
+            vc.viewModel = OMDBMovieDetailViewModel(movie: movie)
+            print("Movie:\(movie)")
+                //vc.imageUrl = photo.image_url
+        }
     }
-    */
+    
 
 }
 

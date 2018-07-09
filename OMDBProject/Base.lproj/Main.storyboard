@@ -68,11 +68,43 @@
                     <navigationItem key="navigationItem" id="cgu-Wg-uet"/>
                     <connections>
                         <outlet property="movieCollectionView" destination="DzX-Hj-ZwO" id="5eu-wJ-Sdu"/>
+                        <segue destination="Qbj-pq-fEq" kind="show" identifier="showMovieDetail" id="m9x-wf-GhP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+            <point key="canvasLocation" x="993" y="125"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="FRR-Hf-y61">
+            <objects>
+                <viewController id="Qbj-pq-fEq" customClass="OMDBMovieDetailViewController" customModule="OMDBProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4g-Le-MO6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQH-SZ-3HQ">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qQH-SZ-3HQ" firstAttribute="leading" secondItem="Ssc-9W-UvO" secondAttribute="leading" constant="16" id="BAE-6p-Li0"/>
+                            <constraint firstItem="Ssc-9W-UvO" firstAttribute="trailing" secondItem="qQH-SZ-3HQ" secondAttribute="trailing" constant="16" id="Kij-yX-3qL"/>
+                            <constraint firstItem="qQH-SZ-3HQ" firstAttribute="top" secondItem="Ssc-9W-UvO" secondAttribute="top" constant="8" id="qUe-nf-Oiu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ssc-9W-UvO"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieNameLabel" destination="qQH-SZ-3HQ" id="Tut-vt-Fgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7B-vk-2Gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.8" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FRh-Hw-nD2">
