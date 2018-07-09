@@ -24,6 +24,7 @@
 		96D4EB0420F2CD910056A40C /* OMDBMovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0320F2CD910056A40C /* OMDBMovieListCollectionViewCell.swift */; };
 		96D4EB0720F2D0CC0056A40C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0620F2D0CC0056A40C /* Configuration.swift */; };
 		96D4EB0920F2D7EE0056A40C /* DefaultApiRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0820F2D7EE0056A40C /* DefaultApiRequestor.swift */; };
+		96D4EB0B20F3808B0056A40C /* OMDBMovieListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0A20F3808B0056A40C /* OMDBMovieListCellViewModel.swift */; };
 		A7B2F36DEFC33E64C30549A5 /* Pods_OMDBProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8669573D2D71CF9AC551EB /* Pods_OMDBProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		96D4EB0320F2CD910056A40C /* OMDBMovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieListCollectionViewCell.swift; sourceTree = "<group>"; };
 		96D4EB0620F2D0CC0056A40C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		96D4EB0820F2D7EE0056A40C /* DefaultApiRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultApiRequestor.swift; sourceTree = "<group>"; };
+		96D4EB0A20F3808B0056A40C /* OMDBMovieListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieListCellViewModel.swift; sourceTree = "<group>"; };
 		97C8EF0B6EF55B2BEC9409CD /* Pods-OMDBProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDBProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMDBProjectTests/Pods-OMDBProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A405E0F1A3AC5DC0E89E4D8D /* Pods_OMDBProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMDBProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65CB647BC143E1827FD5298 /* Pods-OMDBProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDBProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMDBProjectTests/Pods-OMDBProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				96D4EAF620F2C0E00056A40C /* OMDBMovieListViewModel.swift */,
+				96D4EB0A20F3808B0056A40C /* OMDBMovieListCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D4EB0B20F3808B0056A40C /* OMDBMovieListCellViewModel.swift in Sources */,
 				96D4EAFE20F2C7FD0056A40C /* RequestRouter.swift in Sources */,
 				96D4EAF220F2BFC10056A40C /* OMDBMovieList.swift in Sources */,
 				96D4EAEE20F2BF210056A40C /* OMDBMovieListViewController.swift in Sources */,

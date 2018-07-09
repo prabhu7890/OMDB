@@ -11,12 +11,22 @@ import Foundation
 struct OMDBMovie {
     var name:String?
     
-    init(name:String) {
+    var isEmpty: Bool {
+        get {
+            return name == nil
+        }
+    }
+    
+    init(name:String?) {
         self.name = name
     }
     
+    static func empty() -> OMDBMovie {
+        return OMDBMovie(name: nil)
+    }
+    
     static func mapFromDictionary(dictionary:Dictionary<String, AnyObject>) -> OMDBMovie {
-        let omdbMovie = OMDBMovie(name: dictionary["original_title"]! as! String)
+        let omdbMovie = OMDBMovie(name: dictionary["original_title"]! as? String)
         return omdbMovie
     }
 }

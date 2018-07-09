@@ -36,14 +36,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgX-Vu-bz9">
-                                                    <rect key="frame" x="58" y="66.5" width="42" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="20" y="67" width="118" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lgX-Vu-bz9" secondAttribute="trailing" constant="20" id="BYp-zZ-c82"/>
+                                            <constraint firstItem="lgX-Vu-bz9" firstAttribute="leading" secondItem="nA4-I7-sW3" secondAttribute="leading" constant="20" id="REP-9s-AFd"/>
                                             <constraint firstItem="lgX-Vu-bz9" firstAttribute="centerX" secondItem="nA4-I7-sW3" secondAttribute="centerX" id="d4r-5O-ARf"/>
                                             <constraint firstItem="lgX-Vu-bz9" firstAttribute="centerY" secondItem="nA4-I7-sW3" secondAttribute="centerY" id="dmo-St-Gmy"/>
                                         </constraints>
