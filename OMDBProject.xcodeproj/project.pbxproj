@@ -27,6 +27,7 @@
 		96D4EB0B20F3808B0056A40C /* OMDBMovieListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0A20F3808B0056A40C /* OMDBMovieListCellViewModel.swift */; };
 		96D4EB0D20F38C5B0056A40C /* OMDBMovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0C20F38C5B0056A40C /* OMDBMovieDetailViewController.swift */; };
 		96D4EB0F20F38ECC0056A40C /* OMDBMovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB0E20F38ECC0056A40C /* OMDBMovieDetailViewModel.swift */; };
+		96D4EB1120F391630056A40C /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D4EB1020F391630056A40C /* ApiServiceTests.swift */; };
 		A7B2F36DEFC33E64C30549A5 /* Pods_OMDBProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8669573D2D71CF9AC551EB /* Pods_OMDBProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		96D4EB0A20F3808B0056A40C /* OMDBMovieListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieListCellViewModel.swift; sourceTree = "<group>"; };
 		96D4EB0C20F38C5B0056A40C /* OMDBMovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieDetailViewController.swift; sourceTree = "<group>"; };
 		96D4EB0E20F38ECC0056A40C /* OMDBMovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBMovieDetailViewModel.swift; sourceTree = "<group>"; };
+		96D4EB1020F391630056A40C /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
 		97C8EF0B6EF55B2BEC9409CD /* Pods-OMDBProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDBProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMDBProjectTests/Pods-OMDBProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A405E0F1A3AC5DC0E89E4D8D /* Pods_OMDBProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMDBProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65CB647BC143E1827FD5298 /* Pods-OMDBProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDBProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMDBProjectTests/Pods-OMDBProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				96D4EAE220F2BBC70056A40C /* OMDBProjectTests.swift */,
 				96D4EAE420F2BBC70056A40C /* Info.plist */,
+				96D4EB1020F391630056A40C /* ApiServiceTests.swift */,
 			);
 			path = OMDBProjectTests;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D4EB1120F391630056A40C /* ApiServiceTests.swift in Sources */,
 				96D4EAE320F2BBC70056A40C /* OMDBProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
